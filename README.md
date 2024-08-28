@@ -1,27 +1,51 @@
-# TodoApp
+TodoApp
+TodoApp is a task management application designed to help users keep track of their tasks efficiently. Built with Angular and styled using Tailwind CSS, this application offers a clean and responsive interface for managing your to-do list.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+Features
+Add Tasks: Easily add new tasks with the "+ Add Todo" button.
+Edit Tasks: Modify existing tasks using the "Edit" button.
+Delete Tasks: Remove tasks from your list with the "Delete" button.
+Responsive Design: The application is optimized for different screen sizes.
+Custom Scrollbar: Stylish and functional scrollbar for the task table.
+User-Friendly UI: Modern and intuitive interface with Tailwind CSS for a pleasant user experience.
+How It Works
+Adding Tasks:
 
-## Development server
+Click the "+ Add Todo" button to open the modal.
+Enter the task title and submit to add it to your list.
+Editing Tasks:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Click the "Edit" button next to a task to modify it.
+Update the title and save changes.
+Deleting Tasks:
 
-## Code scaffolding
+Click the "Delete" button next to a task to remove it.
+Confirm the action to permanently delete the task.
+Installation
+Clone the Repository:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+bash
+Copy code
+git clone https://github.com/yourusername/todoapp.git
+Navigate to the Project Directory:
 
-## Build
+bash
+Copy code
+cd todoapp
+Install Dependencies:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+bash
+Copy code
+npm install
+Running the Application
+Start the Development Server:
+bash
+Copy code
+ng serve
+Open your browser and go to http://localhost:4200/ to see the app in action.
+Additional Information
+Built with: Angular, Tailwind CSS
+UI Design: Features a gradient banner and custom scrollbar styles.
+Modal Functionality: Provides a modal interface for adding and editing tasks.
+For further customization or contributions, feel free to explore the codebase and enhance the app as needed.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
