@@ -1,36 +1,27 @@
-TodoApp
-TodoApp is a task management application designed to help users efficiently track and manage their tasks. Built with Angular and styled using Tailwind CSS, this app provides a clean, responsive interface for managing your to-do list.
+# TodoApp
 
-Features
-Add Tasks: Use the "+ Add Todo" button to open a modal and add new tasks.
-Edit Tasks: Modify existing tasks by clicking the "Edit" button.
-Delete Tasks: Remove tasks from your list using the "Delete" button.
-Responsive Design: Optimized for various screen sizes.
-Custom Scrollbar: Stylish scrollbar for the task table.
-User-Friendly Interface: Modern and intuitive design with Tailwind CSS.
-How It Works
-Adding Tasks:
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
 
-Click the "+ Add Todo" button to open the modal.
-Enter the task title and submit to add it to your list.
-Editing Tasks:
+## Development server
 
-Click the "Edit" button next to a task to modify it.
-Update the task title and save the changes.
-Deleting Tasks:
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-Click the "Delete" button next to a task to remove it.
-Confirm the action to permanently delete the task.
-Installation
-Install Dependencies:
-Run npm install to install the required dependencies.
-Running the Application
-Start the Development Server:
-Run ng serve to start the development server.
-Open your browser and navigate to http://localhost:4200/ to view the application.
-Additional Information
-Built with: Angular, Tailwind CSS
-UI Design: Features a gradient banner and custom scrollbar styles.
-Modal Functionality: Provides a user-friendly modal interface for adding and editing tasks.
-Feel free to explore and customize the code to suit your needs.
+## Code scaffolding
 
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
