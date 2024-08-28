@@ -11,9 +11,10 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
+import { BannerComponent } from './Components/banner/banner.component';
 
 @NgModule({
-  declarations: [AppComponent, TodoListComponent, TodoModalComponent],
+  declarations: [AppComponent, TodoListComponent, TodoModalComponent, BannerComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

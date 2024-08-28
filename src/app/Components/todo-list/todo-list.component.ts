@@ -10,11 +10,11 @@ import { Todo } from '../../Model/todo.model';
 export class TodoListComponent implements OnInit {
   todos: Todo[] = [];
   isModalOpen = false;
-  modalData: { mode: string; todo?: { id: number; title: string } } = {
+  modalData: { mode: string; todo?: { id: number; title: string; description: string; date: string } } = {
     mode: 'add',
   };
 
-  constructor(private todoService: TodoService) {}
+  constructor(private todoService: TodoService) { }
 
   ngOnInit(): void {
     this.loadTodos();
@@ -27,7 +27,7 @@ export class TodoListComponent implements OnInit {
   openModal(mode: 'add' | 'edit', todo?: Todo): void {
     this.modalData = {
       mode,
-      todo: todo ? { id: todo.id, title: todo.title } : undefined,
+      todo: todo ? { id: todo.id, title: todo.title, description: todo.description, date: todo.date } : undefined,
     };
     this.isModalOpen = true;
   }
@@ -36,12 +36,12 @@ export class TodoListComponent implements OnInit {
     this.isModalOpen = false;
   }
 
-  handleSave(title: string): void {
+  handleSave(data: { title: string; description: string; date: string }): void {
     if (this.modalData.mode === 'edit' && this.modalData.todo) {
-      this.todoService.updateTodo(this.modalData.todo.id, title);
+      this.todoService.updateTodo(this.modalData.todo.id, data.title, data.description, data.date);
       this.showAlert('Todo edited successfully');
     } else {
-      this.todoService.addTodo(title);
+      this.todoService.addTodo(data.title, data.description, data.date);
       this.showAlert('Todo added successfully');
     }
     this.loadTodos();
